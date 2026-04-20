@@ -1,10 +1,10 @@
 from random import sample
 
 from django.db import models
-import uuid
+import uuid6
 
 class User(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    id = models.UUIDField(primary_key=True, default=uuid6.uuid7, editable=False)
     name = models.CharField(max_length=100)
     gender = models.CharField(max_length=10)
     gender_probability = models.FloatField()
